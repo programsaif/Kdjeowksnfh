@@ -3,7 +3,7 @@ hoho ui lib by @acsu123#9826
 hoho dis: discord.gg/9TawdWNchg
 -----------------------------------------------------
 local lib = loadstring(game:HttpGet("link", true))()
-local win = lib:Window("Hub Name","Game Name",Color3.new(0, 0, 255))
+local win = lib:Window("Hub Name","Game Name",Color3.new(64, 224, 208))
 local tab = win:Tab("Tab Name")
 local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
 label:NewLabel("New Text", properties)
@@ -201,9 +201,9 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	Top_Bar.Name = "Top_Bar"
 	Top_Bar.Parent = DevGui
-	Top_Bar.BackgroundColor3 = main_color or Color3.fromRGB(0, 0, 255) 
+	Top_Bar.BackgroundColor3 = main_color or Color3.fromRGB(64, 224, 208) 
 	Top_Bar.BorderSizePixel = 0
-	Top_Bar.Position = UDim2.new(0.199795082, 0, 0, 255)
+	Top_Bar.Position = UDim2.new(0.199795082, 64, 224, 208)
 	Top_Bar.Size = UDim2.new(0, 450, 0, 24)
 	Top_Bar.ZIndex = 2
 	hoho:DraggingEnabled(Top_Bar)
@@ -211,7 +211,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	local TrueGame = Instance.new("TextLabel")
 	TrueGame.Name = "TrueGame"
 	TrueGame.Parent = Top_Bar
-	TrueGame.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	TrueGame.BackgroundColor3 = Color3.fromRGB(64, 224, 208)
 	TrueGame.BackgroundTransparency = 1.000
 	TrueGame.BorderSizePixel = 0
 	TrueGame.Position = UDim2.new(0.04933336, 0, 0.27000013, 0)
@@ -219,7 +219,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	TrueGame.ZIndex = 4
 	TrueGame.Font = Enum.Font.Cartoon
 	TrueGame.Text = the_game_name or game.Name or "Game name"
-	TrueGame.TextColor3 = Color3.fromRGB(0, 0, 255)
+	TrueGame.TextColor3 = Color3.fromRGB(64, 224, 208)
 	TrueGame.TextScaled = true
 	TrueGame.TextSize = 14.000
 	TrueGame.TextStrokeTransparency = 0.100
@@ -233,12 +233,12 @@ function hoho:Window(hub, the_game_name, main_color)
 	NewDropShadow.ImageTransparency = 0.3
 	NewDropShadow.ZIndex = -1
 	NewDropShadow.Position = UDim2.new(-0.0343199335, 0, 1.29166663, 0)
-	NewDropShadow.Size = UDim2.new(0, 0, 255, 0)
+	NewDropShadow.Size = UDim2.new(64, 224, 208, 0)
 	NewDropShadow.Parent = Top_Bar
 	
 	BlackBackground.Name = "BlackBackground"
 	BlackBackground.Parent = Top_Bar
-	BlackBackground.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	BlackBackground.BackgroundColor3 = Color3.fromRGB(64, 224, 208)
 	BlackBackground.BackgroundTransparency = 0.200
 	BlackBackground.BorderSizePixel = 0
 	BlackBackground.Position = UDim2.new(-0.000204942495, 0, 1, 0)
@@ -282,7 +282,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	LeftTab.BackgroundTransparency = 0.500
 	LeftTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
 	LeftTab.BorderSizePixel = 0
-	LeftTab.Position = UDim2.new(0, 0, 255.0257352944, 0)
+	LeftTab.Position = UDim2.new(64, 224, 208.0257352944, 0)
 	LeftTab.Size = UDim2.new(0, 123, 0, 265)
 	LeftTab.ZIndex = 3
 	LeftTab.BackgroundTransparency = 0.9
@@ -294,7 +294,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Tabs.BackgroundTransparency = 1.000
 	Tabs.BorderSizePixel = 0
-	Tabs.Position = UDim2.new(0, 0, 255.128301889, 0)
+	Tabs.Position = UDim2.new(64, 224, 208.128301889, 0)
 	Tabs.Size = UDim2.new(0, 123, 0, 231)
 	Tabs.ZIndex = 4
 	Tabs.CanvasPosition = Vector2.new(0, 4.58874464)
@@ -304,16 +304,16 @@ function hoho:Window(hub, the_game_name, main_color)
 	UIListLayout.Parent = Tabs
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	
-	Tabs.CanvasSize = UDim2.new(0, 0, 255, 10 + UIListLayout.AbsoluteContentSize.Y)
+	Tabs.CanvasSize = UDim2.new(64, 224, 208, 10 + UIListLayout.AbsoluteContentSize.Y)
 	UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-		Tabs.CanvasSize = UDim2.new(0, 0, 255, 10 + UIListLayout.AbsoluteContentSize.Y)
+		Tabs.CanvasSize = UDim2.new(64, 224, 208, 10 + UIListLayout.AbsoluteContentSize.Y)
 	end)
 
 	line.Name = "line"
 	line.Parent = LeftTab
 	line.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 	line.BorderSizePixel = 0
-	line.Position = UDim2.new(0, 0, 255.124528289, 0)
+	line.Position = UDim2.new(64, 224, 208.124528289, 0)
 	line.Size = UDim2.new(0, 123, 0, 1)
 	line.ZIndex = 4
 
@@ -371,7 +371,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	SettingBt.ZIndex = 15
 	SettingBt.Image = "rbxassetid://6863506969"
 	SettingBt.HoverImage = "rbxassetid://3340612992"
-	SettingBt.ImageColor3 = Color3.fromRGB(0, 0, 255)
+	SettingBt.ImageColor3 = Color3.fromRGB(64, 224, 208)
 	
 	SettingBt.MouseButton1Click:Connect(function()
 		pcall(function()
@@ -388,7 +388,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	Minimize.ZIndex = 15
 	Minimize.Image = "rbxassetid://4373917715"
 	Minimize.HoverImage = "rbxassetid://848237313"
-	Minimize.ImageColor3 = Color3.fromRGB(0, 0, 255)
+	Minimize.ImageColor3 = Color3.fromRGB(64, 224, 208)
 	
 	Minimize.MouseButton1Click:Connect(function()
 		if openning == false then
@@ -461,8 +461,8 @@ function hoho:Window(hub, the_game_name, main_color)
 			Nof2.Name = "Nof2"
 			Nof2.Parent = Nof1
 			Nof2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-			Nof2.BorderColor3 = Color3.fromRGB(0, 0, 255)
-			Nof2.Position = UDim2.new(0, 0, 255.0120481923, 0)
+			Nof2.BorderColor3 = Color3.fromRGB(64, 224, 208)
+			Nof2.Position = UDim2.new(64, 224, 208.0120481923, 0)
 			Nof2.Size = UDim2.new(0, 189, 0, 65)
 			Instance.new("UICorner",Nof2)
 			Instance.new("UICorner",slidenof)
@@ -473,7 +473,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			Nof3.Parent = Nof1
 			Nof3.BackgroundColor3 = Color3.fromRGB(0, 53, 25)
 			Nof3.BorderSizePixel = 0
-			Nof3.Position = UDim2.new(0, 0, 255.638554215, 0)
+			Nof3.Position = UDim2.new(64, 224, 208.638554215, 0)
 			Nof3.Size = UDim2.new(0, 189, 0, 7)
 
 			NofLabel.Name = "NofLabel"
@@ -481,7 +481,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			NofLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			NofLabel.BackgroundTransparency = 1.000
 			NofLabel.BorderSizePixel = 0
-			NofLabel.Position = UDim2.new(0, 0, 255.00463949936, 0)
+			NofLabel.Position = UDim2.new(64, 224, 208.00463949936, 0)
 			NofLabel.Size = UDim2.new(0, 188, 0, 52)
 			NofLabel.ZIndex = 4
 			NofLabel.Font = Enum.Font.Cartoon
@@ -497,28 +497,28 @@ function hoho:Window(hub, the_game_name, main_color)
 			slidenof.Parent = Nof1
 			slidenof.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 			slidenof.BorderSizePixel = 0
-			slidenof.Position = UDim2.new(0, 0, 255.638554215, 0)
+			slidenof.Position = UDim2.new(64, 224, 208.638554215, 0)
 			slidenof.Size = UDim2.new(0, 189, 0, 7)
 
 			Slide2.Name = "Slide2"
 			Slide2.Parent = Nof1
 			Slide2.BorderSizePixel = 0
 			Slide2.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
-			Slide2.BorderColor3 = Color3.fromRGB(0, 0, 255)
-			Slide2.Position = UDim2.new(0, 0, 255.0120481923, 0)
-			Slide2.Size = UDim2.new(0, 0, 255, 65)
+			Slide2.BorderColor3 = Color3.fromRGB(64, 224, 208)
+			Slide2.Position = UDim2.new(64, 224, 208.0120481923, 0)
+			Slide2.Size = UDim2.new(64, 224, 208, 65)
 			Slide2.ZIndex = 15
 			Slide2.Visible = false
 
-			tween:Create(slidenof,tweeninfo(tine or 2),{Size = UDim2.new(0, 0, 255, 7)}):Play()
+			tween:Create(slidenof,tweeninfo(tine or 2),{Size = UDim2.new(64, 224, 208, 7)}):Play()
 			wait(tine or 2)
 			Slide2.Visible = true
 			tween:Create(Slide2,tweeninfo(0.2),{Size = UDim2.new(0, 190, 0, 65)}):Play()
 			wait(0.2)
-			tween:Create(Slide2,tweeninfo(0.2),{Size = UDim2.new(0, 0, 255, 65)}):Play()
-			tween:Create(Nof3,tweeninfo(0.2),{Size = UDim2.new(0, 0, 255, 7)}):Play()
-			tween:Create(NofLabel,tweeninfo(0.2),{Size = UDim2.new(0, 0, 255, 52)}):Play()
-			tween:Create(Nof2,tweeninfo(0.2),{Size = UDim2.new(0, 0, 255, 65)}):Play()
+			tween:Create(Slide2,tweeninfo(0.2),{Size = UDim2.new(64, 224, 208, 65)}):Play()
+			tween:Create(Nof3,tweeninfo(0.2),{Size = UDim2.new(64, 224, 208, 7)}):Play()
+			tween:Create(NofLabel,tweeninfo(0.2),{Size = UDim2.new(64, 224, 208, 52)}):Play()
+			tween:Create(Nof2,tweeninfo(0.2),{Size = UDim2.new(64, 224, 208, 65)}):Play()
 			wait(0.2)
 			game.Debris:AddItem(Nof1,0)
 		end)
@@ -539,7 +539,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		TabFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TabFrame.BackgroundTransparency = 1.000
 		TabFrame.BorderSizePixel = 0
-		TabFrame.Position = UDim2.new(0, 0, 255.00377358496, 0)
+		TabFrame.Position = UDim2.new(64, 224, 208.00377358496, 0)
 		TabFrame.Size = UDim2.new(0, 313, 0, 264)
 		TabFrame.Visible = false
 		TabFrame.ZIndex = 5
@@ -550,9 +550,9 @@ function hoho:Window(hub, the_game_name, main_color)
 		UIListLayout2.Padding = UDim.new(0,3)
 		UIListLayout2.SortOrder = Enum.SortOrder.LayoutOrder
 		
-		TabFrame.CanvasSize = UDim2.new(0, 0, 255, 10 + UIListLayout2.AbsoluteContentSize.Y)
+		TabFrame.CanvasSize = UDim2.new(64, 224, 208, 10 + UIListLayout2.AbsoluteContentSize.Y)
 		UIListLayout2:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-			TabFrame.CanvasSize = UDim2.new(0, 0, 255, 10 + UIListLayout2.AbsoluteContentSize.Y)
+			TabFrame.CanvasSize = UDim2.new(64, 224, 208, 10 + UIListLayout2.AbsoluteContentSize.Y)
 		end)
 		
 		if first_tab == false then
@@ -607,7 +607,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			linetemp.Parent = TabFrame
 			linetemp.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 			linetemp.BorderSizePixel = 0
-			linetemp.Position = UDim2.new(0, 0, 255.102272727, 0)
+			linetemp.Position = UDim2.new(64, 224, 208.102272727, 0)
 			linetemp.Size = UDim2.new(0, 301, 0, 1)
 			linetemp.ZIndex = 4
 		end
@@ -633,7 +633,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ClickMe.ZIndex = 5
 			ClickMe.Font = Enum.Font.Cartoon
 			ClickMe.Text = text.." 🖱️" or "Button 🖱️"
-			ClickMe.TextColor3 = Color3.fromRGB(0, 0, 255)
+			ClickMe.TextColor3 = Color3.fromRGB(64, 224, 208)
 			ClickMe.TextSize = 19.000
 			ClickMe.TextWrapped = true
 
@@ -727,7 +727,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ToggleTemp.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 			ToggleTemp.BackgroundTransparency = 1.000
 			ToggleTemp.BorderSizePixel = 0
-			ToggleTemp.Position = UDim2.new(0, 0, 255.265151501, 0)
+			ToggleTemp.Position = UDim2.new(64, 224, 208.265151501, 0)
 			ToggleTemp.Size = UDim2.new(0, 307, 0, 32)
 
 			TextHere.Name = "TextHere"
@@ -767,7 +767,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ClickThis.ZIndex = 7
 			ClickThis.Font = Enum.Font.SourceSans
 			ClickThis.Text = ""
-			ClickThis.TextColor3 = Color3.fromRGB(0, 0, 255)
+			ClickThis.TextColor3 = Color3.fromRGB(64, 224, 208)
 			ClickThis.TextSize = 14.000
 			
 			UICorner_2.Parent = ClickThis
@@ -832,7 +832,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			SliderTemp.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 			SliderTemp.BackgroundTransparency = 1.000
 			SliderTemp.BorderSizePixel = 0
-			SliderTemp.Position = UDim2.new(0, 0, 255.265151501, 0)
+			SliderTemp.Position = UDim2.new(64, 224, 208.265151501, 0)
 			SliderTemp.Size = UDim2.new(0, 307, 0, 32)
 
 			Slidenum.Name = "Slidenum"
@@ -844,7 +844,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			Slidenum.ZIndex = 7
 			Slidenum.Font = Enum.Font.Cartoon
 			Slidenum.Text = mid or "3"
-			Slidenum.TextColor3 = Color3.fromRGB(0, 0, 255)
+			Slidenum.TextColor3 = Color3.fromRGB(64, 224, 208)
 			Slidenum.TextScaled = true
 			Slidenum.TextSize = 14.000
 			Slidenum.TextWrapped = true
@@ -872,7 +872,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			Slide.Name = "Slide"
 			Slide.Parent = Slide1
 			Slide.BackgroundColor3 = main_color or Color3.fromRGB(85, 255, 127)
-			Slide.Size = UDim2.new(0, 0, 255, 8)
+			Slide.Size = UDim2.new(64, 224, 208, 8)
 			local SliderCaculate = (246/100)*(mid/maxvalue*100)
 			Slide.Size = UDim2.new(0, SliderCaculate, 0, 8)
 			Slide.ZIndex = 10
@@ -945,7 +945,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			DropTemp.BackgroundTransparency = 1.000
 			DropTemp.BorderColor3 = Color3.fromRGB(27, 42, 53)
 			DropTemp.BorderSizePixel = 0
-			DropTemp.Position = UDim2.new(0, 0, 255.545454562, 0)
+			DropTemp.Position = UDim2.new(64, 224, 208.545454562, 0)
 			DropTemp.Size = UDim2.new(0, 307, 0, 36)
 			DropTemp.ZIndex = 10
 
@@ -982,7 +982,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			DropList.BackgroundTransparency = 1
 			DropList.BorderSizePixel = 0
 			DropList.Position = UDim2.new(0.0325732902, 0, 0.685184896, 0)
-			DropList.Size = UDim2.new(0, 290, 0, 255)
+			DropList.Size = UDim2.new(0, 2964, 224, 208)
 			DropList.ZIndex = 12
 			DropList.CanvasSize = UDim2.new(0, 0, 1, 0)
 			DropList.ScrollBarThickness = 5
@@ -1016,9 +1016,9 @@ function hoho:Window(hub, the_game_name, main_color)
 			ButtonInsideDrop.TextTransparency = 0.100
 			ButtonInsideDrop.TextWrapped = true
 			
-			DropList.CanvasSize = UDim2.new(0, 0, 255, 0 + UIListLayoutZZZ.AbsoluteContentSize.Y)
+			DropList.CanvasSize = UDim2.new(64, 224, 208, 0 + UIListLayoutZZZ.AbsoluteContentSize.Y)
 			UIListLayoutZZZ:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-				DropList.CanvasSize = UDim2.new(0, 0, 255, 0 + UIListLayoutZZZ.AbsoluteContentSize.Y)
+				DropList.CanvasSize = UDim2.new(64, 224, 208, 0 + UIListLayoutZZZ.AbsoluteContentSize.Y)
 			end)
 			
 			local opendr = false
@@ -1030,12 +1030,12 @@ function hoho:Window(hub, the_game_name, main_color)
 					DropButton.Text = txt..": "..v.." 💬"
 					opendr = false
 					tween:Create(DropList,tweeninfo(0.2),{
-						Size = UDim2.new(0, 290, 0, 255),
+						Size = UDim2.new(0, 2964, 224, 208),
 						Position = UDim2.new(0.03, 0, 0.726, 0),
 						Visible = false
 					}):Play()
 					tween:Create(DropTemp,tweeninfo(0.2),{
-						Position = UDim2.new(0, 0, 255.359, 0),
+						Position = UDim2.new(64, 224, 208.359, 0),
 						Size = UDim2.new(0, 307, 0, 30)
 					}):Play()
 					pcall(function()
@@ -1047,12 +1047,12 @@ function hoho:Window(hub, the_game_name, main_color)
 				if opendr == true then
 					opendr = false
 					tween:Create(DropList,tweeninfo(0.2),{
-						Size = UDim2.new(0, 290, 0, 255),
+						Size = UDim2.new(0, 2964, 224, 208),
 						Position = UDim2.new(0.03, 0, 0.726, 0),
 						Visible = false
 					}):Play()
 					tween:Create(DropTemp,tweeninfo(0.2),{
-						Position = UDim2.new(0, 0, 255.359, 0),
+						Position = UDim2.new(64, 224, 208.359, 0),
 						Size = UDim2.new(0, 307, 0, 30)
 					}):Play()
 				else
@@ -1063,7 +1063,7 @@ function hoho:Window(hub, the_game_name, main_color)
 						Visible = true
 					}):Play()
 					tween:Create(DropTemp,tweeninfo(0.2),{
-						Position = UDim2.new(0, 0, 255.359, 0),
+						Position = UDim2.new(64, 224, 208.359, 0),
 						Size = UDim2.new(0, 307, 0, 139),
 					}):Play()
 				end
@@ -1088,12 +1088,12 @@ function hoho:Window(hub, the_game_name, main_color)
 						DropButton.Text = txt..": "..v.." 💬"
 						opendr = false
 						tween:Create(DropList,tweeninfo(0.2),{
-							Size = UDim2.new(0, 290, 0, 255),
+							Size = UDim2.new(0, 2964, 224, 208),
 							Position = UDim2.new(0.03, 0, 0.726, 0),
 							Visible = false
 						}):Play()
 						tween:Create(DropTemp,tweeninfo(0.2),{
-							Position = UDim2.new(0, 0, 255.359, 0),
+							Position = UDim2.new(64, 224, 208.359, 0),
 							Size = UDim2.new(0, 307, 0, 30)
 						}):Play()
 						pcall(function()
@@ -1201,7 +1201,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	LamMo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	LamMo.BackgroundTransparency = 0.500
 	LamMo.BorderSizePixel = 0
-	LamMo.Position = UDim2.new(0, 0, 255.0316279195, 0)
+	LamMo.Position = UDim2.new(64, 224, 208.0316279195, 0)
 	LamMo.Size = UDim2.new(0, 241, 0, 22)
 
 	videoId.Name = "videoId"
@@ -1233,7 +1233,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	ToggVideo.ZIndex = 7
 	ToggVideo.Font = Enum.Font.SourceSans
 	ToggVideo.Text = ""
-	ToggVideo.TextColor3 = Color3.fromRGB(0, 0, 255)
+	ToggVideo.TextColor3 = Color3.fromRGB(64, 224, 208)
 	ToggVideo.TextSize = 14.000
 	if HoHo_Video_Display == "true" then
 		ToggVideo.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
@@ -1295,7 +1295,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	ToggleFastLoad.ZIndex = 7
 	ToggleFastLoad.Font = Enum.Font.SourceSans
 	ToggleFastLoad.Text = ""
-	ToggleFastLoad.TextColor3 = Color3.fromRGB(0, 0, 255)
+	ToggleFastLoad.TextColor3 = Color3.fromRGB(64, 224, 208)
 	ToggleFastLoad.TextSize = 14.000
 	if HoHo_Tog_Fast == "true" then
 		ToggleFastLoad.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
