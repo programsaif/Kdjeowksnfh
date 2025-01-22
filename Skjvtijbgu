@@ -201,9 +201,9 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	Top_Bar.Name = "Top_Bar"
 	Top_Bar.Parent = DevGui
-	Top_Bar.BackgroundColor3 = main_color or Color3.fromRGB(0, 0, 0)
+	Top_Bar.BackgroundColor3 = main_color or Color3.fromRGB(0, 0, 0) 
 	Top_Bar.BorderSizePixel = 0
-	Top_Bar.Position = UDim2.new(0.199795082, 0, 0.178649232, 0)
+	Top_Bar.Position = UDim2.new(0.199795082, 0, 0, 0)
 	Top_Bar.Size = UDim2.new(0, 450, 0, 24)
 	Top_Bar.ZIndex = 2
 	hoho:DraggingEnabled(Top_Bar)
@@ -233,7 +233,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	NewDropShadow.ImageTransparency = 0.3
 	NewDropShadow.ZIndex = -1
 	NewDropShadow.Position = UDim2.new(-0.0343199335, 0, 1.29166663, 0)
-	NewDropShadow.Size = UDim2.new(0, 495, 0, 286)
+	NewDropShadow.Size = UDim2.new(0, 0, 0, 0)
 	NewDropShadow.Parent = Top_Bar
 	
 	BlackBackground.Name = "BlackBackground"
@@ -254,7 +254,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	
 	VideoBackground.Name = "VideoBackground"
 	VideoBackground.Parent = Top_Bar
-	VideoBackground.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	VideoBackground.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 	VideoBackground.BackgroundTransparency = 0
 	VideoBackground.BorderSizePixel = 0
 	VideoBackground.Position = UDim2.new(-0.000204942495, 0, 1, 0)
@@ -278,7 +278,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	LeftTab.Name = "LeftTab"
 	LeftTab.Parent = BlackBackground
-	LeftTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	LeftTab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 	LeftTab.BackgroundTransparency = 0.500
 	LeftTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
 	LeftTab.BorderSizePixel = 0
@@ -1355,4 +1355,4 @@ function hoho:Window(hub, the_game_name, main_color)
 	return hoho_wind
 end
 _G.hoho = hoho
-return hoho=
+return hoho
