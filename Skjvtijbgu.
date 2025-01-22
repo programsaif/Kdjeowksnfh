@@ -3,7 +3,7 @@ hoho ui lib by @acsu123#9826
 hoho dis: discord.gg/9TawdWNchg
 -----------------------------------------------------
 local lib = loadstring(game:HttpGet("link", true))()
-local win = lib:Window("Hub Name","Game Name",Color3.new(0, 0, 0))
+local win = lib:Window("Hub Name","Game Name",Color3.new(0.333333, 0.666667, 1))
 local tab = win:Tab("Tab Name")
 local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
 label:NewLabel("New Text", properties)
@@ -211,7 +211,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	local TrueGame = Instance.new("TextLabel")
 	TrueGame.Name = "TrueGame"
 	TrueGame.Parent = Top_Bar
-	TrueGame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TrueGame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	TrueGame.BackgroundTransparency = 1.000
 	TrueGame.BorderSizePixel = 0
 	TrueGame.Position = UDim2.new(0.04933336, 0, 0.27000013, 0)
@@ -219,7 +219,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	TrueGame.ZIndex = 4
 	TrueGame.Font = Enum.Font.Cartoon
 	TrueGame.Text = the_game_name or game.Name or "Game name"
-	TrueGame.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TrueGame.TextColor3 = Color3.fromRGB(0, 0, 0)
 	TrueGame.TextScaled = true
 	TrueGame.TextSize = 14.000
 	TrueGame.TextStrokeTransparency = 0.100
@@ -238,7 +238,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	
 	BlackBackground.Name = "BlackBackground"
 	BlackBackground.Parent = Top_Bar
-	BlackBackground.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	BlackBackground.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	BlackBackground.BackgroundTransparency = 0.200
 	BlackBackground.BorderSizePixel = 0
 	BlackBackground.Position = UDim2.new(-0.000204942495, 0, 1, 0)
@@ -254,7 +254,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	
 	VideoBackground.Name = "VideoBackground"
 	VideoBackground.Parent = Top_Bar
-	VideoBackground.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	VideoBackground.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	VideoBackground.BackgroundTransparency = 0
 	VideoBackground.BorderSizePixel = 0
 	VideoBackground.Position = UDim2.new(-0.000204942495, 0, 1, 0)
@@ -278,7 +278,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	LeftTab.Name = "LeftTab"
 	LeftTab.Parent = BlackBackground
-	LeftTab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+	LeftTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	LeftTab.BackgroundTransparency = 0.500
 	LeftTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
 	LeftTab.BorderSizePixel = 0
@@ -1355,4 +1355,4 @@ function hoho:Window(hub, the_game_name, main_color)
 	return hoho_wind
 end
 _G.hoho = hoho
-return hoho
+return hoho=
