@@ -566,7 +566,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 		ButtonTest.Name = this_ or "ButtonTest"
 		ButtonTest.Parent = Tabs
-		ButtonTest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ButtonTest.BackgroundColor3 = Color3.fromRGB(125, 249, 255)
 		ButtonTest.BackgroundTransparency = 1.000
 		ButtonTest.BorderSizePixel = 0
 		ButtonTest.Position = UDim2.new(0, 0, -0.019864697, 0)
