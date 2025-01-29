@@ -219,7 +219,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	TrueGame.ZIndex = 4
 	TrueGame.Font = Enum.Font.Cartoon
 	TrueGame.Text = the_game_name or game.Name or "Game name"
-	TrueGame.TextColor3 = Color3.fromRGB(125, 249, 255)
+	TrueGame.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TrueGame.TextScaled = true
 	TrueGame.TextSize = 14.000
 	TrueGame.TextStrokeTransparency = 0.100
@@ -566,7 +566,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 		ButtonTest.Name = this_ or "ButtonTest"
 		ButtonTest.Parent = Tabs
-		ButtonTest.BackgroundColor3 = Color3.fromRGB(125, 249, 255)
+		ButtonTest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ButtonTest.BackgroundTransparency = 1.000
 		ButtonTest.BorderSizePixel = 0
 		ButtonTest.Position = UDim2.new(0, 0, -0.019864697, 0)
@@ -1354,5 +1354,8 @@ function hoho:Window(hub, the_game_name, main_color)
 	end
 	return hoho_wind
 end
+newsec:ColorPicker("Color Picker Title",Color3.fromRGB(39, 39, 39),function(xd)
+	print(xd)
+end)
 _G.hoho = hoho
 return hoho
